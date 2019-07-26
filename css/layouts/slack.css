@@ -1,0 +1,9 @@
+/* TODO: slack layout */
+.bars {
+  display: flex;
+  height: 100%;
+}
+
+.bars .chat {
+  flex-grow: 1;
+}

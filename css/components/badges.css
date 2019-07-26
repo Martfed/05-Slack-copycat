@@ -1,0 +1,56 @@
+.badge{
+  background-color: #4B3949;
+  width: 240px;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+.badge h2, h3 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: white;
+  margin-left: 10px;
+}
+
+.badge h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.bagde h2, h3, p {
+  padding: 3px;
+}
+
+.badge h3 {
+  font-size: 20px;
+}
+
+.badge p {
+  font-size: 16px;
+  margin:6px;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.fa-circle {
+  font-size: 10px;
+  padding: 2px;
+  color: #1FE5BD;
+}
+
+.align {
+  display:flex;
+  justify-content: space-between;
+}
+
+.fa-plus {
+  color: white;
+  margin-top: 18px;
+}
+
+.selected-conversation {
+  color: white;
+}

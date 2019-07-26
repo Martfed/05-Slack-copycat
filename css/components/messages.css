@@ -1,0 +1,19 @@
+.message {
+  margin-left: 15px;
+  display: flex;
+}
+
+.message h6 {
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.message p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.message p, h6 {
+  margin-left: 5px;
+}

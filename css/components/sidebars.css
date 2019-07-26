@@ -1,0 +1,41 @@
+.sidebar{
+  background-color: #261C25;
+  width: 90px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.selected-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.unselected-link {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 5px 7px;
+  font-size: 22px;
+}
+
+.unselected-link:hover {
+  color:white;
+  text-decoration: none;
+}
+
+
+.selected-link:hover {
+  color:white;
+  text-decoration: none;
+}
