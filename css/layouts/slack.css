@@ -1,7 +1,8 @@
 /* TODO: slack layout */
 .bars {
-  display: flex;
+  display: grid;
   height: 100%;
+  grid-template-columns: 100px 250px 1fr;
 }
 
 .bars .chat {

@@ -1,53 +1,89 @@
-/* Importing Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slack prototype</title>
 
-/* Importing components */
-@import url("components/sidebars.css");
-@import url("components/badges.css");
-@import url("components/chat.css");
-@import url("components/messages.css");
-@import url("components/avatar.css");
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
-/* Importing layouts */
-@import url("layouts/slack.css");
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-html, body {
-  height: 100%;
-}
-
-h1, h2, h3 {
-  font-weight: bold;
-}
-h1 {
-  font-size: 30px;
-}
-h2 {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-h3 {
-  font-size: 23px;
-  font-family: inherit;
-}
-.padded {
-  padding: 30px 0;
-}
-
-@media only screen and (max-width: 600px) {
-  .sidebar {
-    width: 20vw;
-  }
-  .badge {
-    width: 20vw;
-  }
-  .badge p {
-    width: 80%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
+    <!-- TODO: Slack copycat markup -->
+    <div class="bars">
+      <div class="sidebar">
+        <a href="#" class="selected-link">LW</a>
+        <a href="#" class="unselected-link">SL</a>
+      </div>
+      <div class="badge">
+        <h2>Nazis</h2>
+        <p><i class="fas fa-circle"></i> Donal Trump</p>
+        <div class="align">
+          <h3>Channels</h3>
+          <p><i class="fas fa-plus"></i></p>
+        </div>
+        <p><i class="fab fa-slack-hash"></i> general</p>
+        <p><i class="fab fa-slack-hash"></i> help</p>
+        <p class="selected-conversation"><i class="fab fa-slack-hash"></i> Destroy Europe</p>
+        <p><i class="fas fa-lock"></i> Destroy World</p>
+        <p><i class="fas fa-lock"></i> Conquer Universe</p>
+        <div class="align">
+          <h3>Direct Messages</h3>
+          <p><i class="fas fa-plus"></i></p>
+        </div>
+        <p><i class="fas fa-circle"></i> LePen</p>
+        <p><i class="fas fa-circle"></i> Salvini</p>
+        <p><i class="fas fa-circle"></i> BorisJ</p>
+      </div>
+      <div class="conversation">
+        <div class="chat">
+          <h1><i class="fas fa-bomb"></i> Destroy Europe</h1>
+          <div class="message">
+            <img src="css/images/Boris.jpg" class="avatar">
+            <div>
+              <h6>BorisJ</h6>
+              <p>hi guyyyys! 🎉🎉🎉🎉 <br> Have you heard the lattest neeeeeeeeews??? 🍾🍾</p>
+            </div>
+          </div>
+          <div class="message">
+            <img src="css/images/lepen.jpg" class="avatar">
+            <div>
+              <h6>LePen</h6>
+              <p>Mais ouiiiii<br> I am prroud! Wi will conqueure l'Europe!</p>
+            </div>
+          </div>
+          <div class="message">
+            <img src="css/images/salvini.JPG" class="avatar">
+            <div>
+              <h6>Salvini</h6>
+              <p>Bravo! I hate migrants</p>
+            </div>
+          </div>
+          <div class="message">
+            <img src="css/images/trump.jpeg" class="avatar">
+            <div>
+              <h6>Trump</h6>
+              <p>Wow wow wow! you guys are doing a great work!<br> I'll come visit one day!</p>
+            </div>
+          </div>
+        </div>
+         <div class="chat-input">
+            <form action="#">
+              <input type="text" placeholder="What do destroy?">
+            </form>
+          </div>
+      </div>
+    </div>
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
